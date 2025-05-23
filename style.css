@@ -1,0 +1,251 @@
+.jumbotron {
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+    background-color: #8aeaff;
+}
+.btn {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to right, #1e90ff, blue);
+    color: white;
+    cursor: pointer;
+    transition: 1s ease, transform 0.9s ease;
+  }
+  .btn:hover {
+    background: linear-gradient(to right, blue, #1e90ff);
+    color: white;
+    transform: scale(1.05);
+}
+/* Efek cahaya biru untuk tombol "Button" */
+.glow-button {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 1), 0 0 30px rgba(0, 123, 255, 0.8);
+  transform: translateY(-2px);
+}
+/* Efek cahaya biru tomobol send */
+.btn-glow {
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0 0 8px rgb(0, 234, 255);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 12px rgb(255, 255, 255);
+}
+/* Background lembut untuk bagian Project */
+#project {
+  background: linear-gradient(to bottom, #e0f7ff, #b3e5fc);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 0 0 30px 30px;
+}
+
+.gallery {
+  background-color:#8aeaff ;
+  
+}
+
+
+  /*HOUVER RESPONSIVE*/
+.responsive {
+  padding: 10px 30px;
+  border-radius:px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.responsive:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+/*HOUVER RESPONSIVE1 */
+
+.responsive1 {
+  padding: 10px 30px;
+  border-radius:px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.responsive1:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.responsive1{
+  width: 100%;
+  height: auto;
+}
+
+
+
+section {
+  padding-top: 7rem;
+}
+
+h1 {
+  
+}
+
+/*CSS TAMBAHAN PAK WIN UNTUK HURUF MENYALA */
+h1{
+  font-size: 30px;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
+.animated-text{
+  
+    font-size: 18px;
+    font-weight: 650;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+   
+}
+
+.animated-text span::before{
+  
+    content: "Developer";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #8aeaff;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Developer";
+    }
+    21%,40%{
+        content: "Pelajar SMK";
+    }
+    41%,60%{
+        content: "Programer";
+    }
+    61%,80%{
+        content: "Gaming";
+    }
+    81%,100%{
+        content: "Dising web";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 7px);
+    }
+}
+
+
+
+/*CSS TAMBAHAN PAK WIN UNTUK HURUF MENYALA  JUDUL SECTION*/
+
+h2 {
+  font-size: clamp(2rem, 2vw + 1rem, 1rem);
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  h2 {
+    
+    background-image: linear-gradient(
+      to right,
+      #1506e2,
+      #0703e6,
+      #4a04a7,
+      #300594,
+      #c00000,
+      #d41c03,
+      #e6d604,
+      #020200,
+      #020300
+      
+    );
+
+    /* padding: 1rem;
+    border: 20px solid rgb(255 255 255 / 50%);
+    background-clip: border-box;
+    background-clip: padding-box;
+    background-clip: content-box; */
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    --bg-size: 200%;
+    color: transparent;
+    background-size: var(--bg-size);
+    /* animation: animate 2s steps(5) infinite; */
+    animation: animate 2s linear infinite;
+    /* animation: animate 2s ease infinite; */
+  }
+
+  @keyframes animate {
+    /* from {
+      background-position: 0;
+    } */
+    to {
+      background-position: var(--bg-size);
+    }
+  }
+}
+
+
+/*CSS TAMBAHAN PAK WIN UNTUK JENIS HURUF AUREL PU NAMA PANJANG*/
+h1{
+
+   font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+ 	font-size: 230%;
+		 color: #010005;
+		 
+		   
+	}
+
